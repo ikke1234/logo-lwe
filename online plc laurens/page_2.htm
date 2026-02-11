@@ -1,0 +1,253 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="author" content="Matthias Edler-Golla, wachenfeld-golla.de">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta http-equiv="Pragma" content="no-cache"> 
+        <meta http-equiv="Cache-control" content="no-cache, must-revalidate"> 
+        <meta http-equiv="Expires" content="0"> 
+
+
+        <style type="text/css">
+            body{
+                // background-image: url(img/default.jpg); 
+                background: gray; 
+                background-size: 100%;
+
+                -moz-user-select: none; /*ff*/
+                -webkit-user-select: none; /*webkit*/
+                -ms-user-select: none; /*IE10*/
+                -khtml-user-select: none; /*old*/
+                user-select: none;
+            }
+            #wrap{
+                position:relative;
+                margin: auto;
+            }
+            #main{
+                position:relative; 
+                //margin: auto;
+                padding:0;
+                top:0;
+                left:0;
+                background-color: white;
+                //border:1px solid red;
+            }
+            .textCenter{
+                //MARGIN-LEFT: auto;
+                vertical-align:middle;
+                text-align:center;
+                //word-wrap:break-word;
+                text-overflow: ellipsis; 
+                overflow: hidden; 
+                white-space: nowrap; 
+            }
+        </style>
+        <link href="js/jqueryui/jqueryui.css" rel="stylesheet" type="text/css">
+        <link href="css/nav.css" rel="stylesheet" type="text/css"> 
+        <!-- this script helps older IE versions to understand html5 -->
+        <!--[if lt IE 9 ]>
+            <script src="js/html5.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="/js/utility.js?rdm=175999059"></script> 
+        <script type="text/javascript" src="/js/storage.js?rdm=175999059"></script>
+        <script type="text/javascript" src="/js/bigint.js?rdm=175999059"></script>
+        <script type="text/javascript" src="/js/encrypt.js?rdm=175999059"></script>
+        <script type="text/javascript" src="/js/ajax.js?rdm=175999059"></script>
+        <script type="text/javascript" src="/js/login.js?rdm=175999059"></script>
+        <script type="text/javascript" src="/js/pagecommon.js?rdm=175999059"></script>
+        <script type="text/javascript" src="/js/binding.js?rdm=175999059"></script>
+        <script type="text/javascript" src="js/jquery.js?rdm=175999059"></script>
+        <script type="text/javascript" src="js/jqueryui/jqueryui.js?rdm=175999059"></script>
+        <script type="text/javascript" src="js/map.js?rdm=175999059"></script>
+        <script type="text/javascript" src="js/echart.js?rdm=175999059"></script>
+        <script type="text/javascript" src="js/render.js?rdm=175999059"></script> 
+        
+ 
+    </head>
+    <body onload="loadPage()">  
+        <div style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;z-index: 1000; background-color:gray;opacity: 0.98;" id="loadingDiv">
+            <p style="position: relative;text-align: center;color:white;top: 45%;" class="blink">LOADING...</p>
+        </div>
+        <div id="wrap">
+            <div id="main" onclick="renderJs.hideMenu()" prefix="Siemens" style="width: 1420px; height: 880px;">
+                        
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 67px; cursor: pointer; position: absolute; left: 69px; top: 152px; width: 65px; height: 67px; background-size: 65px 68px; transform: rotate(0deg); background-image: url(&quot;img/F4F9092D.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 2; background-repeat: no-repeat no-repeat;" range="131" address="1" type="1" length="1" on_text="" off_text="" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="4c1384ec51d6442d9ded" show_param="4c1384ec51d6442d9ded" degree="0" tag_id="Private Tag" device_name="" on_image="img/EE0EC220.gif" off_image="img/F4F9092D.png" bg_image="img/F4F9092D.png" mode="true" text_align="center">
+                                    
+                
+                <p style="width: 65px; height: 67px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                            
+            </div>
+                        
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 67px; cursor: pointer; position: absolute; left: 217px; top: 152px; width: 65px; height: 67px; background-size: 65px 68px; transform: rotate(0deg); background-image: url(&quot;img/F4F9092D.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 4; background-repeat: no-repeat no-repeat;" range="131" address="2" type="1" length="1" on_text="" off_text="" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="41f6952cee4bf23d7dfc" show_param="41f6952cee4bf23d7dfc" degree="0" tag_id="Private Tag" device_name="" on_image="img/EE0EC220.gif" off_image="img/F4F9092D.png" bg_image="img/F4F9092D.png" mode="true" text_align="center">
+                                    
+                
+                <p style="width: 65px; height: 67px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                            
+            </div>
+                        
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 67px; cursor: pointer; position: absolute; left: 365px; top: 152px; width: 65px; height: 67px; background-size: 65px 68px; transform: rotate(0deg); background-image: url(&quot;img/F4F9092D.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 5; background-repeat: no-repeat no-repeat;" range="131" address="3" type="1" length="1" on_text="" off_text="" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="47329ab7e1651171205a" show_param="47329ab7e1651171205a" degree="0" tag_id="Private Tag" device_name="" on_image="img/EE0EC220.gif" off_image="img/F4F9092D.png" bg_image="img/F4F9092D.png" mode="true" text_align="center">
+                                    
+                
+                <p style="width: 65px; height: 67px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                            
+            </div>
+                        
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 67px; cursor: pointer; position: absolute; left: 513px; top: 152px; width: 65px; height: 67px; background-size: 65px 68px; transform: rotate(0deg); background-image: url(&quot;img/F4F9092D.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 8; background-repeat: no-repeat no-repeat;" range="131" address="13" type="1" length="1" on_text="" off_text="" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="45ae90902584991b0856" show_param="45ae90902584991b0856" degree="0" tag_id="Private Tag" device_name="" on_image="img/EE0EC220.gif" off_image="img/F4F9092D.png" bg_image="img/F4F9092D.png" mode="true" text_align="center">
+                                    
+                
+                <p style="width: 65px; height: 67px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                            
+            </div>
+                        
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 67px; cursor: pointer; position: absolute; left: 661px; top: 152px; width: 65px; height: 67px; background-size: 65px 68px; transform: rotate(0deg); background-image: url(&quot;img/F4F9092D.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 10; background-repeat: no-repeat no-repeat;" range="131" address="14" type="1" length="1" on_text="" off_text="" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="4f7eab24c60c89b30536" show_param="4f7eab24c60c89b30536" degree="0" tag_id="Private Tag" device_name="" on_image="img/EE0EC220.gif" off_image="img/F4F9092D.png" bg_image="img/F4F9092D.png" mode="true" text_align="center">
+                                    
+                
+                <p style="width: 65px; height: 67px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                            
+            </div>
+                        
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 53px; top: 235px; width: 96px; height: 65px; background-size: 96px 66px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 7; background-repeat: no-repeat no-repeat;" id="4e6ea20960261825e05b" degree="0" text_align="center">
+                                    
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 96px; height: 65px;">
+                                        thermishe beveileging
+                    
+                    <br>
+                                        transportpomp
+                
+                </p>
+                            
+            </div>
+                        
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 201px; top: 235px; width: 96px; height: 65px; background-size: 96px 66px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 8; background-repeat: no-repeat no-repeat;" id="41f6a4bb63cb156cbe73" degree="0" text_align="center">
+                                    
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 96px; height: 65px;">
+                                        thermishe beveileging
+                    
+                    <br>
+                                        circulatie pomp
+                
+                </p>
+                            
+            </div>
+                        
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 349px; top: 235px; width: 96px; height: 65px; background-size: 96px 66px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 9; background-repeat: no-repeat no-repeat;" id="438ca58f55fe6d156ca5" degree="0" text_align="center">
+                                    
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 96px; height: 65px;">
+                                        thermishe beveileging
+                    
+                    <br>
+                                        toevoer ventilator
+                
+                </p>
+                            
+            </div>
+                        
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 497px; top: 235px; width: 96px; height: 65px; background-size: 96px 66px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 10; background-repeat: no-repeat no-repeat;" id="4b53a242c9485d9cd4b3" degree="0" text_align="center">
+                                    
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 96px; height: 65px;">
+                                        thermishe beveileging
+                    
+                    <br>
+                                        afzuiging
+                
+                </p>
+                            
+            </div>
+                        
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 645px; top: 235px; width: 96px; height: 65px; background-size: 96px 66px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 11; background-repeat: no-repeat no-repeat;" id="4c7c8f4835bee8460dba" degree="0" text_align="center">
+                                    
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 96px; height: 65px;">
+                                        thermishe beveileging
+                    
+                    <br>
+                                        waterpomp
+                
+                </p>
+                            
+            </div>
+                        
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 84px; cursor: pointer; position: absolute; left: 583px; top: 388px; width: 84px; height: 84px; background-size: 84px 85px; transform: rotate(0deg); background-image: url(&quot;img/2A815546.png&quot;); font-style: italic; font-family: Arial; font-size: 24px; color: rgb(255, 0, 51); z-index: 13; font-weight: bold; background-repeat: no-repeat no-repeat;" range="131" address="49" type="1" length="1" on_text="" off_text="" frequency="1000" mouse_mode="Hold" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="416789241a4a3e7a96cb" show_param="416789241a4a3e7a96cb" degree="0" tag_id="" device_name="" on_image="img/0E82A110.gif" off_image="img/2A815546.png" bg_image="img/2A815546.png" mode="true" text_align="center">
+                                    
+                
+                <p style="width: 84px; height: 84px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                            
+            </div>
+                        
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 471px; top: 467px; width: 308px; height: 118px; background-size: 308px 119px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 24px; color: rgb(0, 0, 0); z-index: 14; background-repeat: no-repeat no-repeat;" id="4f3dbe3cc2a4b7a38fcc" degree="0" text_align="center">
+                                    
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 308px; height: 118px;">
+                                        reset
+                    
+                    <br>
+                                        max 1x per 5 min gebruiken
+                
+                </p>
+                            
+            </div>
+                        
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 63px; cursor: pointer; position: absolute; left: 683px; top: 388px; width: 65px; height: 63px; background-size: 65px 64px; transform: rotate(0deg); background-image: url(&quot;img/5F55CA3B.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 14; background-repeat: no-repeat no-repeat;" range="131" address="50" type="1" length="1" on_text="wacht" off_text="" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="40448a0a4070f3525ddd" show_param="40448a0a4070f3525ddd" degree="0" tag_id="Private Tag" device_name="" on_image="img/0E82A110.gif" off_image="img/5F55CA3B.png" bg_image="img/5F55CA3B.png" mode="true" text_align="center">
+                                    
+                
+                <p style="width: 65px; height: 63px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                            
+            </div>
+                    
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 67px; cursor: pointer; position: absolute; left: 809px; top: 152px; width: 65px; height: 67px; background-size: 65px 68px; transform: rotate(0deg); background-image: url(&quot;img/F4F9092D.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 15; background-repeat: no-repeat no-repeat;" range="131" address="14" type="1" length="1" on_text="" off_text="" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="4aa1a897e32039935e5d" show_param="4aa1a897e32039935e5d" degree="0" tag_id="Private Tag" device_name="" on_image="img/EE0EC220.gif" off_image="img/F4F9092D.png" bg_image="img/F4F9092D.png" mode="true" text_align="center">
+                                                    
+                <p style="width: 65px; height: 67px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                            
+            </div>
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 793px; top: 235px; width: 96px; height: 65px; background-size: 96px 66px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 16; background-repeat: no-repeat no-repeat;" id="4844a21f3282f6440c88" degree="0" text_align="center">
+                                                    
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 96px; height: 65px;">
+                    thermishe beveileging
+                    <br>
+                    extra afzuiging
+                </p>
+                            
+            </div>
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 67px; cursor: pointer; position: absolute; left: 957px; top: 152px; width: 65px; height: 67px; background-size: 65px 68px; transform: rotate(0deg); background-image: url(&quot;img/F4F9092D.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 17; background-repeat: no-repeat no-repeat;" range="131" address="19" type="1" length="1" on_text="" off_text="" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="4649b9b1be3a74833881" show_param="4649b9b1be3a74833881" degree="0" tag_id="Private Tag" device_name="" on_image="img/EE0EC220.gif" off_image="img/F4F9092D.png" bg_image="img/F4F9092D.png" mode="true" text_align="center">
+                                                    
+                <p style="width: 65px; height: 67px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                            
+            </div>
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 941px; top: 235px; width: 96px; height: 65px; background-size: 96px 66px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 18; background-repeat: no-repeat no-repeat;" id="443ead7bc7fafd767633" degree="0" text_align="center">
+                                                    
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 96px; height: 65px;">
+                    thermishe beveileging
+                    <br>
+                    kast
+                </p>
+                            
+            </div>
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 67px; cursor: pointer; position: absolute; left: 1106px; top: 152px; width: 65px; height: 67px; background-size: 65px 68px; transform: rotate(0deg); background-image: url(&quot;img/F4F9092D.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 19; background-repeat: no-repeat no-repeat;" range="131" address="34" type="1" length="1" on_text="" off_text="" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="45d98b022c4e6abc37d9" show_param="45d98b022c4e6abc37d9" degree="0" tag_id="Private Tag" device_name="" on_image="img/EE0EC220.gif" off_image="img/F4F9092D.png" bg_image="img/F4F9092D.png" mode="true" text_align="center">
+                                                    
+                <p style="width: 65px; height: 67px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                            
+            </div>
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 1090px; top: 235px; width: 96px; height: 65px; background-size: 96px 66px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 20; background-repeat: no-repeat no-repeat;" id="4592af479ad0909ec1d6" degree="0" text_align="center">
+                                                    
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 96px; height: 65px;">
+                    thermishe beveileging
+                    <br>
+                    ventilator zaal 1
+                </p>
+                            
+            </div>
+        </div> 
+        </div>
+        <div id="timeout_dlg" style="display: none">Please check the network connection!</div>
+    
+
+
+</body></html>

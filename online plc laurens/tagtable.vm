@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tVariableTable>
+    <variables>
+        <id>0905f31b-d81a-4c23-b9fb-75ab64e8434b</id>
+        <name>variable1</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="129">I</blockType>
+        <blockNum realvalue="0">I1</blockNum>
+        <type realvalue="1">Bit</type>
+        <length realvalue="1">1</length>
+    </variables>
+</tVariableTable>

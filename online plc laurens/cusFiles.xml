@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CustomizeFiles>
+    <CustomizeComponent xmlFileName="C:\Program Files\lwe\lwe\buildInCustomizeComponents\login\comp.xml" count="1">
+        <ComponentIDs>
+            <ComponentID>LOGIN_CMP</ComponentID>
+        </ComponentIDs>
+        <Files>
+            <File>js\login.js</File>
+        </Files>
+    </CustomizeComponent>
+    <CustomizeComponent xmlFileName="C:\Program Files\lwe\lwe\buildInCustomizeComponents\trendView\comp.xml" count="1">
+        <ComponentIDs>
+            <ComponentID>4fe58c0e6d200bcd6731</ComponentID>
+            <ComponentID>4844b8c35ddf9f012665</ComponentID>
+        </ComponentIDs>
+        <Files>
+            <File>js\trend.js</File>
+        </Files>
+    </CustomizeComponent>
+    <CustomizeComponent xmlFileName="C:\Program Files\lwe\lwe\buildInCustomizeComponents\webcam\comp.xml" count="0">
+        <ComponentIDs/>
+        <Files>
+            <File>css\webcam.css</File>
+            <File>js\video.js</File>
+            <File>js\webcam.js</File>
+            <File>css\video.css</File>
+        </Files>
+    </CustomizeComponent>
+    <CustomizeComponent xmlFileName="C:\Program Files\lwe\lwe\buildInCustomizeComponents\rainbow\comp.xml" count="18">
+        <ComponentIDs>
+            <ComponentID>488590b37be550686913</ComponentID>
+            <ComponentID>4bce83be096d92a0fbdc</ComponentID>
+            <ComponentID>4d319483cc9e2fd3e7d8</ComponentID>
+            <ComponentID>4e0e93d30a60552984fa</ComponentID>
+            <ComponentID>4a2a95bd72ba7f994c38</ComponentID>
+            <ComponentID>47eda3a11e43e80b29fb</ComponentID>
+            <ComponentID>4183af24135b37625436</ComponentID>
+            <ComponentID>4bc293075e97417e2a8e</ComponentID>
+            <ComponentID>494aa6632695b7773774</ComponentID>
+            <ComponentID>4dc6a5ec19d1a1683fe8</ComponentID>
+            <ComponentID>443db95587fc566c119d</ComponentID>
+            <ComponentID>48ec8f140874b055ff24</ComponentID>
+            <ComponentID>45ca95a04b64bce4f01a</ComponentID>
+            <ComponentID>4037917063c4dcd09ab5</ComponentID>
+            <ComponentID>4787b09ea2aa5f84302b</ComponentID>
+            <ComponentID>47c99530a667693f0e8d</ComponentID>
+            <ComponentID>4ee6891d44603c94c461</ComponentID>
+            <ComponentID>4c2ca101237545152402</ComponentID>
+        </ComponentIDs>
+        <Files>
+            <File>js\rainbow.js</File>
+        </Files>
+    </CustomizeComponent>
+    <CustomizeComponent xmlFileName="C:\Program Files\lwe\lwe\buildInCustomizeComponents\analogValue\comp.xml" count="16">
+        <ComponentIDs>
+            <ComponentID>4aa79834c93eade3e81b</ComponentID>
+            <ComponentID>42a2abf20d46560ca45b</ComponentID>
+            <ComponentID>455ea4d34a4eef0a0b02</ComponentID>
+            <ComponentID>45659695e4de6de60319</ComponentID>
+            <ComponentID>47ad93be7774452e5ec3</ComponentID>
+            <ComponentID>46a8807cfb49eb5e59a6</ComponentID>
+            <ComponentID>4dffaad5663f3a4a6fc1</ComponentID>
+            <ComponentID>4e9f83ac10fef037b7f1</ComponentID>
+            <ComponentID>4ac6bac2f6eb96a5152c</ComponentID>
+            <ComponentID>4e95a0a355e0f186a608</ComponentID>
+            <ComponentID>42f0a861563062f78ae0</ComponentID>
+            <ComponentID>43f395d64e9d247a283e</ComponentID>
+            <ComponentID>49de91615b9721c27033</ComponentID>
+            <ComponentID>43dda3ec29c935390671</ComponentID>
+            <ComponentID>48a3aed56c425f109c14</ComponentID>
+            <ComponentID>4577a508e3d05de91882</ComponentID>
+        </ComponentIDs>
+        <Files>
+            <File>js\anavalue.js</File>
+        </Files>
+    </CustomizeComponent>
+    <CustomizeComponent xmlFileName="C:\Program Files\lwe\lwe\buildInCustomizeComponents\pdf\comp.xml" count="0">
+        <ComponentIDs/>
+        <Files>
+            <File>js\pdf.js</File>
+        </Files>
+    </CustomizeComponent>
+    <CustomizeComponent xmlFileName="C:\Users\info\OneDrive\Desktop\tempratuur\software\lwe\lwe\buildInCustomizeComponents\analogValue\comp.xml" count="4">
+        <ComponentIDs>
+            <ComponentID>4ac6bac2f6eb96a5152c</ComponentID>
+            <ComponentID>4e95a0a355e0f186a608</ComponentID>
+            <ComponentID>4aa79834c93eade3e81b</ComponentID>
+            <ComponentID>42a2abf20d46560ca45b</ComponentID>
+        </ComponentIDs>
+        <Files>
+            <File>js\anavalue.js</File>
+        </Files>
+    </CustomizeComponent>
+    <CustomizeComponent xmlFileName="C:\Users\info\OneDrive\Desktop\tempratuur\software\lwe\lwe\buildInCustomizeComponents\rainbow\comp.xml" count="12">
+        <ComponentIDs>
+            <ComponentID>4bc293075e97417e2a8e</ComponentID>
+            <ComponentID>494aa6632695b7773774</ComponentID>
+            <ComponentID>488590b37be550686913</ComponentID>
+            <ComponentID>4bce83be096d92a0fbdc</ComponentID>
+            <ComponentID>4d319483cc9e2fd3e7d8</ComponentID>
+            <ComponentID>4e0e93d30a60552984fa</ComponentID>
+            <ComponentID>4a2a95bd72ba7f994c38</ComponentID>
+            <ComponentID>47eda3a11e43e80b29fb</ComponentID>
+            <ComponentID>4183af24135b37625436</ComponentID>
+            <ComponentID>4dc6a5ec19d1a1683fe8</ComponentID>
+            <ComponentID>443db95587fc566c119d</ComponentID>
+            <ComponentID>48ec8f140874b055ff24</ComponentID>
+        </ComponentIDs>
+        <Files>
+            <File>js\rainbow.js</File>
+        </Files>
+    </CustomizeComponent>
+    <CustomizeComponent xmlFileName="C:\Users\info\OneDrive\Desktop\tempratuur\software\lwe\lwe\buildInCustomizeComponents\login\comp.xml" count="1">
+        <ComponentIDs>
+            <ComponentID>LOGIN_CMP</ComponentID>
+        </ComponentIDs>
+        <Files>
+            <File>js\login.js</File>
+        </Files>
+    </CustomizeComponent>
+</CustomizeFiles>

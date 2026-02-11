@@ -1,0 +1,139 @@
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+    <HEAD>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                        
+        
+        <META charset="UTF-8">
+                 
+        
+        
+        <STYLE type="text/css">
+            #main{
+                position:relative; 
+                margin:0;
+                padding:0;
+                top:0;
+                left:0;
+                background-color: white;
+                //border:1px solid red;
+                background:-webkit-linear-gradient(60deg, white 0px, black 1px, red 0px, white 0px) 25px -24px;
+                background:-moz-linear-gradient(60deg, white 0px, black 1px, red 0px, white 0px) 25px -24px;
+                background:-o-linear-gradient(60deg, white 0px, black 1px, red 0px, white 0px) 25px -24px;
+                background:linear-gradient(60deg, white 0px, black 1px, red 0px, white 0px) 25px -24px;
+                background-size: 10px 10px;
+            }
+            .textCenter{   
+                //MARGIN-LEFT: auto;
+                vertical-align:middle;
+                text-align:center;
+                //word-wrap:break-word;
+                text-overflow: ellipsis; 
+                overflow: hidden; 
+                white-space: nowrap; 
+            }
+        </STYLE>
+                        
+        
+        <LINK href="js/jqueryui/jqueryui.css" rel="stylesheet" type="text/css">
+                        <SCRIPT type="text/javascript" src="js/jquery.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="js/jqueryui/jqueryui.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="js/load.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="js/map.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="js/echart.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="js/edit.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="js/analog.js"></SCRIPT>
+        
+        
+        <TITLE></TITLE>
+                    
+    <SCRIPT src="js/trend.js?rdm=1762516590964" type="text/javascript" id="js/trend.js"></SCRIPT>
+    </HEAD>
+            
+    
+    <BODY onload="loadEditPage()">
+                        
+        
+        <DIV id="main" onclick="renderJs.hideMenu()" prefix="Siemens" style="width: 1420px; height: 880px;">
+                        
+            <DIV comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 84px; cursor: pointer; position: absolute; left: 97px; top: 62px; width: 84px; height: 84px; background-size: 84px 85px; transform: rotate(0deg); background-image: url(&quot;file:///C:/Users/kevin/Documents/NetBeansProjects/online%20plc%20laurens/img/pb_stop.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 2; background-repeat: no-repeat no-repeat;" range="131" address="31" type="1" length="1" on_text="ON" off_text="OFF" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="48c28db2c7268b4ba77c" show_param="48c28db2c7268b4ba77c" degree="0" tag_id="Private Tag" device_name="" on_image="img/pb_go.png" off_image="img/pb_stop.png" bg_image="img/pb_stop.png" mode="true" text_align="center">
+                                    
+                
+                <P style="width: 84px; height: 84px; display: table-cell; vertical-align: middle; text-align: center;">OFF</P>
+                            
+            </DIV>
+                        
+            <DIV comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 111px; top: 241px; width: 57px; height: 52px; background-size: 57px 53px; transform: rotate(0deg); background-image: url(&quot;file:///C:/Users/kevin/Documents/NetBeansProjects/online%20plc%20laurens/img/Default.png&quot;); cursor: pointer; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 3; background-repeat: no-repeat no-repeat;" range="131" address="32" type="1" length="1" on_text="ON" off_text="OFF" id="406ebf87df0e6ab3069c" show_param="406ebf87df0e6ab3069c" degree="0" tag_id="Private Tag" device_name="" on_image="img/Default.png" off_image="img/Default.png" bg_image="img/Default.png" mode="true" text_align="center" onclick="renderJs.setDigitalData(this)">
+                                
+                <P style="width: 57px; height: 52px; display: table-cell; vertical-align: middle; text-align: center;">OFF</P>
+                            
+            </DIV>
+                        
+            <DIV comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 111px; top: 309px; width: 57px; height: 52px; background-size: 57px 53px; transform: rotate(0deg); background-image: url(&quot;file:///C:/Users/kevin/Documents/NetBeansProjects/online%20plc%20laurens/img/Default.png&quot;); cursor: pointer; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 4; background-repeat: no-repeat no-repeat;" range="131" address="33" type="1" length="1" on_text="ON" off_text="OFF" id="4fa0b2fc38745367fbb1" show_param="4fa0b2fc38745367fbb1" degree="0" tag_id="Private Tag" device_name="" on_image="img/Default.png" off_image="img/Default.png" bg_image="img/Default.png" mode="true" text_align="center" onclick="renderJs.setDigitalData(this)">
+                                
+                <P style="width: 57px; height: 52px; display: table-cell; vertical-align: middle; text-align: center;">OFF</P>
+                            
+            </DIV>
+                        
+            <DIV comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 111px; top: 377px; width: 57px; height: 52px; background-size: 57px 53px; transform: rotate(0deg); background-image: url(&quot;file:///C:/Users/kevin/Documents/NetBeansProjects/online%20plc%20laurens/img/Default.png&quot;); cursor: not-allowed; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 5; background-repeat: no-repeat no-repeat;" range="129" address="0" type="1" length="1" on_text="ON" off_text="OFF" id="44029ce5f154ec686c24" show_param="44029ce5f154ec686c24" degree="0" tag_id="Private Tag" device_name="" on_image="img/Default.png" off_image="img/Default.png" bg_image="img/Default.png" mode="false" text_align="center">
+                                
+                <P style="width: 57px; height: 52px; display: table-cell; vertical-align: middle; text-align: center;">OFF</P>
+                            
+            </DIV>
+                        
+            <DIV comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 111px; top: 445px; width: 57px; height: 52px; background-size: 57px 53px; transform: rotate(0deg); background-image: url(&quot;file:///C:/Users/kevin/Documents/NetBeansProjects/online%20plc%20laurens/img/Default.png&quot;); cursor: not-allowed; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 6; background-repeat: no-repeat no-repeat;" range="129" address="0" type="1" length="1" on_text="ON" off_text="OFF" id="48408dfbfccc66c09f2e" show_param="48408dfbfccc66c09f2e" degree="0" tag_id="Private Tag" device_name="" on_image="img/Default.png" off_image="img/Default.png" bg_image="img/Default.png" mode="false" text_align="center">
+                                
+                <P style="width: 57px; height: 52px; display: table-cell; vertical-align: middle; text-align: center;">OFF</P>
+                            
+            </DIV>
+                        
+            <DIV class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 273px; top: 84px; width: 282px; height: 41px; background-size: 282px 42px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 7; background-repeat: no-repeat no-repeat;" id="42348d3cf7e095079fa3" degree="0" text_align="center">
+                                    
+                
+                <P style="display: table-cell; vertical-align: middle; text-align: center; width: 282px; height: 41px;">
+                                        kies naar wie het gestuurd moet worden
+                    
+                    <BR>
+                                        daarna op de rode knop
+                
+                </P>
+                            
+            </DIV>
+                        
+            <DIV class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 197px; top: 247px; width: 84px; height: 41px; background-size: 84px 42px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 8; background-repeat: no-repeat no-repeat;" id="4d948a8cc50db3512b5f" degree="0" text_align="center">
+                                    
+                
+                <P style="display: table-cell; vertical-align: middle; text-align: center; width: 84px; height: 41px;">Laurens</P>
+                            
+            </DIV>
+                        
+            <DIV class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 197px; top: 315px; width: 84px; height: 41px; background-size: 84px 42px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 9; background-repeat: no-repeat no-repeat;" id="4d07be89453a3457562d" degree="0" text_align="center">
+                                    
+                
+                <P style="display: table-cell; vertical-align: middle; text-align: center; width: 84px; height: 41px;">Kevin</P>
+                            
+            </DIV>
+                        
+            <DIV class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 197px; top: 383px; width: 84px; height: 41px; background-size: 84px 42px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 10; background-repeat: no-repeat no-repeat;" id="43efa19a0d8336bce79e" degree="0" text_align="center">
+                                    
+                
+                <P style="display: table-cell; vertical-align: middle; text-align: center; width: 84px; height: 41px;">palceholder</P>
+                            
+            </DIV>
+                        
+            <DIV class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 197px; top: 451px; width: 84px; height: 41px; background-size: 84px 42px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 11; background-repeat: no-repeat no-repeat;" id="4fabaebe631415655bde" degree="0" text_align="center">
+                                    
+                
+                <P style="display: table-cell; vertical-align: middle; text-align: center; width: 84px; height: 41px;">palceholder</P>
+                            
+            </DIV>
+                    
+        </DIV>
+                    
+
+    
+
+
+    </BODY>
+</HTML>

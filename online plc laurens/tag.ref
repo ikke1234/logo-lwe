@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TagRef>
+    <PageRefs>
+        <PageVm page="page_3"/>
+        <PageVm page="page_1">
+            <TagComp compId="4fe58c0e6d200bcd6731" tagId="b3a4965c-037b-4ec7-9797-9653b8a5ab26"/>
+        </PageVm>
+        <PageVm page="main"/>
+    </PageRefs>
+</TagRef>

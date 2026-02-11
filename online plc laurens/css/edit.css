@@ -1,0 +1,17 @@
+#main{
+     position:relative; 
+     margin:0;
+     padding:0;
+     top:0;
+     left:0;
+     //border:1px solid red;
+ }
+ div{
+     //MARGIN-LEFT: auto;
+     vertical-align:middle;
+     text-align:center;
+     //word-wrap:break-word;
+     text-overflow: ellipsis; 
+     overflow: hidden; 
+     white-space: nowrap; 
+ }

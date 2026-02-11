@@ -1,0 +1,866 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="author" content="Matthias Edler-Golla, wachenfeld-golla.de">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta http-equiv="Pragma" content="no-cache"> 
+        <meta http-equiv="Cache-control" content="no-cache, must-revalidate"> 
+        <meta http-equiv="Expires" content="0"> 
+
+
+        <style type="text/css">
+            body{
+                // background-image: url(img/default.jpg); 
+                background: gray; 
+                background-size: 100%;
+
+                -moz-user-select: none; /*ff*/
+                -webkit-user-select: none; /*webkit*/
+                -ms-user-select: none; /*IE10*/
+                -khtml-user-select: none; /*old*/
+                user-select: none;
+            }
+            #wrap{
+                position:relative;
+                margin: auto;
+            }
+            #main{
+                position:relative; 
+                //margin: auto;
+                padding:0;
+                top:0;
+                left:0;
+                background-color: white;
+                //border:1px solid red;
+            }
+            .textCenter{
+                //MARGIN-LEFT: auto;
+                vertical-align:middle;
+                text-align:center;
+                //word-wrap:break-word;
+                text-overflow: ellipsis; 
+                overflow: hidden; 
+                white-space: nowrap; 
+            }
+        </style>
+        <link href="js/jqueryui/jqueryui.css" rel="stylesheet" type="text/css">
+        <link href="css/nav.css" rel="stylesheet" type="text/css"> 
+        <!-- this script helps older IE versions to understand html5 -->
+        <!--[if lt IE 9 ]>
+            <script src="js/html5.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="/js/utility.js?rdm=177046152"></script> 
+        <script type="text/javascript" src="/js/storage.js?rdm=177046152"></script>
+        <script type="text/javascript" src="/js/bigint.js?rdm=177046152"></script>
+        <script type="text/javascript" src="/js/encrypt.js?rdm=177046152"></script>
+        <script type="text/javascript" src="/js/ajax.js?rdm=177046152"></script>
+        <script type="text/javascript" src="/js/login.js?rdm=177046152"></script>
+        <script type="text/javascript" src="/js/pagecommon.js?rdm=177046152"></script>
+        <script type="text/javascript" src="/js/binding.js?rdm=177046152"></script>
+        <script type="text/javascript" src="js/jquery.js?rdm=177046152"></script>
+        <script type="text/javascript" src="js/jqueryui/jqueryui.js?rdm=177046152"></script>
+        <script type="text/javascript" src="js/map.js?rdm=177046152"></script>
+        <script type="text/javascript" src="js/echart.js?rdm=177046152"></script>
+        <script type="text/javascript" src="js/render.js?rdm=177046152"></script> 
+        <script src="js/rainbow.js?rdm=1770461523626" type="text/javascript" id="js/rainbow.js"></script><script src="js/anavalue.js?rdm=1770461523626" type="text/javascript" id="js/anavalue.js"></script><script src="js/video.js?rdm=1770461523626" type="text/javascript" id="js/video.js"></script><script src="js/webcam.js?rdm=1770461523626" type="text/javascript" id="js/webcam.js"></script>
+<link rel="stylesheet" href="css/video.css" id="css/video.css"><link rel="stylesheet" href="css/webcam.css" id="css/webcam.css"> 
+    </head>
+    <body onload="loadPage()">  
+        <div style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;z-index: 1000; background-color:gray;opacity: 0.98;" id="loadingDiv">
+            <p style="position: relative;text-align: center;color:white;top: 45%;" class="blink">LOADING...</p>
+        </div>
+        <div id="wrap">
+            <div id="main" onclick="renderJs.hideMenu()" prefix="Siemens" style="width: 1420px; height: 880px;">
+                                                                                                                                                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="server_binding analog_udc" comp_type="cus_rainbowComponent" show_function="_callback_rainbowOnChange" range="20" address="144" type="4" length="1" show_param="4bc293075e97417e2a8e" d_max="100" d_min="0" d_title="" id="4bc293075e97417e2a8e" _echarts_instance_="ec_1770459664036" style="position: absolute; left: 48px; top: 50px; width: 182px; height: 182px; transform: rotate(0deg); z-index: 2;" degree="0" tag_id="Private Tag" device_name="" block_format="Unsigned" decimal="1" mode="false" last_background-color="#ffffff" record_opacity="0" detail_fontstyle="normal" detail_fontsize="28" detail_fontfamily="Arial" detail_fontweight="" axislabel_fontstyle="normal" axislabel_fontsize="12" axislabel_fontfamily="Arial" axislabel_fontweight="" detail_color="0.2,#66cdaa,0.8,#4682b4,1,#a52a2a"><div style="overflow: hidden; position: relative; width: 182px; height: 182px; background-color: transparent;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseprofile="full" width="182" height="182" style="position: absolute; left: 0px; top: 0px;"><path d="M 33.3594 159.5606 L 29.1168 163.8032 A 90.09 90.09 0 0 1 3.8392 86.0068 L 9.7653 86.9454 A 84.09 84.09 0 0 0 33.3594 159.5606 Z" fill="#66cdaa" fill-opacity="1" stroke="none" clip-path="none"></path><path d="M 9.7653 86.9454 L 3.8392 86.0068 A 90.09 90.09 0 0 1 181.8008 86.0068 L 175.8747 86.9454 A 84.09 84.09 0 0 0 9.7653 86.9454 Z" fill="#4682b4" fill-opacity="1" stroke="none" clip-path="none"></path><path d="M 175.8747 86.9454 L 181.8008 86.0068 A 90.09 90.09 0 0 1 156.5232 163.8032 L 152.2806 159.5606 A 84.09 84.09 0 0 0 175.8747 86.9454 Z" fill="#a52a2a" fill-opacity="1" stroke="none" clip-path="none"></path><path d="M 29.1168 163.8032 L 39.7234 153.1966" fill="none" stroke="#66cdaa" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="after-edge" x="43.25888570663488" y="149.66111429336513" fill="#66cdaa" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="after-edge" text-anchor="start" x="43.25888570663488" y="149.66111429336513">0</tspan></text><path d="M 29.1168 163.8032 L 36.1878 156.7322" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 23.4045 157.5255 L 31.1096 151.1513" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 18.3083 150.7381 L 26.5791 145.1173" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 13.8735 143.5012 L 22.6366 138.6837" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 10.1395 135.8791 L 19.317 131.9076" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 7.1393 127.9393 L 16.6499 124.8492" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 7.1393 127.9393 L 21.4052 123.3041" fill="none" stroke="#66cdaa" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="middle" x="26.160448772872698" y="121.75900113574009" fill="#66cdaa" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="middle" text-anchor="start" x="26.160448772872698" y="121.75900113574009">10</tspan></text><path d="M 7.1393 127.9393 L 16.6499 124.8492" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 4.8997 119.7525 L 14.6588 117.5711" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 3.4404 111.3913 L 13.3615 110.1379" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 2.7745 102.9298 L 12.7695 102.6157" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 2.9078 94.4432 L 12.888 95.0711" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 3.8392 86.0068 L 13.716 87.5712" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 3.8392 86.0068 L 18.6545 88.3533" fill="none" stroke="#66cdaa" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="middle" x="23.592924207686792" y="89.13550834533028" fill="#66cdaa" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="middle" text-anchor="start" x="23.592924207686792" y="89.13550834533028">20</tspan></text><path d="M 3.8392 86.0068 L 13.716 87.5712" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 5.5603 77.6955 L 15.2462 80.1824" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 8.0561 69.5831 L 17.4649 72.9705" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 11.3041 61.7415 L 20.3524 65.9993" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 15.2758 54.2405 L 23.8832 59.3309" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 19.9357 47.1464 L 28.0258 53.0243" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 19.9357 47.1464 L 32.0709 55.9632" fill="none" stroke="#4682b4" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="hanging" x="36.11599886425989" y="58.90213166682064" fill="#4682b4" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="hanging" text-anchor="start" x="36.11599886425989" y="58.90213166682064">30</tspan></text><path d="M 19.9357 47.1464 L 28.0258 53.0243" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 25.2425 40.5224 L 32.7436 47.1355" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 31.1492 34.4272 L 37.9946 41.7169" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 37.6032 28.9149 L 43.7323 36.8165" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 44.5474 24.0345 L 49.9056 32.4778" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 51.92 19.8292 L 56.4599 28.7393" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 51.92 19.8292 L 58.7299 33.1943" fill="none" stroke="#4682b4" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="hanging" x="60.99980587325507" y="37.649352719637356" fill="#4682b4" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="hanging" text-anchor="start" x="60.99980587325507" y="37.649352719637356">40</tspan></text><path d="M 51.92 19.8292 L 56.4599 28.7393" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 59.6557 16.3364 L 63.3369 25.6342" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 67.6857 13.5871 L 70.4756 23.1901" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 75.9388 11.6057 L 77.8126 21.4286" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 84.3418 10.4098 L 85.2829 20.3654" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 92.82 10.01 L 92.82 20.01" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 92.82 10.01 L 92.82 25.01" fill="none" stroke="#4682b4" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="hanging" x="92.81999999999985" y="30.010000000000005" fill="#4682b4" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="hanging" text-anchor="middle" x="92.81999999999985" y="30.010000000000005">50</tspan></text><path d="M 92.82 10.01 L 92.82 20.01" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 101.2982 10.4098 L 100.3571 20.3654" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 109.7012 11.6057 L 107.8274 21.4286" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 117.9543 13.5871 L 115.1644 23.1901" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 125.9843 16.3364 L 122.3031 25.6342" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 133.72 19.8292 L 129.1801 28.7393" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 133.72 19.8292 L 126.9101 33.1943" fill="none" stroke="#4682b4" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="hanging" x="124.64019412674469" y="37.64935271963722" fill="#4682b4" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="hanging" text-anchor="end" x="124.64019412674469" y="37.64935271963722">60</tspan></text><path d="M 133.72 19.8292 L 129.1801 28.7393" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 141.0926 24.0345 L 135.7344 32.4778" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 148.0368 28.9149 L 141.9077 36.8165" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 154.4908 34.4272 L 147.6454 41.7169" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 160.3975 40.5224 L 152.8964 47.1355" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 165.7043 47.1464 L 157.6142 53.0243" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 165.7043 47.1464 L 153.5691 55.9632" fill="none" stroke="#4682b4" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="hanging" x="149.52400113573998" y="58.90213166682042" fill="#4682b4" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="hanging" text-anchor="end" x="149.52400113573998" y="58.90213166682042">70</tspan></text><path d="M 165.7043 47.1464 L 157.6142 53.0243" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 170.3642 54.2405 L 161.7568 59.3309" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 174.3359 61.7415 L 165.2876 65.9993" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 177.5839 69.5831 L 168.1751 72.9705" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 180.0797 77.6955 L 170.3938 80.1824" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 181.8008 86.0068 L 171.924 87.5712" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 181.8008 86.0068 L 166.9855 88.3533" fill="none" stroke="#4682b4" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="middle" x="162.0470757923132" y="89.13550834533005" fill="#4682b4" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="middle" text-anchor="end" x="162.0470757923132" y="89.13550834533005">80</tspan></text><path d="M 181.8008 86.0068 L 171.924 87.5712" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 182.7322 94.4432 L 172.752 95.0711" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 182.8655 102.9298 L 172.8705 102.6157" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 182.1996 111.3913 L 172.2785 110.1379" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 180.7403 119.7525 L 170.9812 117.5711" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 178.5007 127.9393 L 168.9901 124.8492" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 178.5007 127.9393 L 164.2348 123.3041" fill="none" stroke="#a52a2a" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="middle" x="159.4795512271274" y="121.7590011357399" fill="#a52a2a" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="middle" text-anchor="end" x="159.4795512271274" y="121.7590011357399">90</tspan></text><path d="M 178.5007 127.9393 L 168.9901 124.8492" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 175.5005 135.8791 L 166.323 131.9076" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 171.7665 143.5012 L 163.0034 138.6837" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 167.3317 150.7381 L 159.0609 145.1173" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 162.2355 157.5255 L 154.5304 151.1513" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 156.5232 163.8032 L 149.4522 156.7322" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 156.5232 163.8032 L 145.9166 153.1966" fill="none" stroke="#a52a2a" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="after-edge" x="142.38111429336524" y="149.661114293365" fill="#a52a2a" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="after-edge" text-anchor="end" x="142.38111429336524" y="149.661114293365">100</tspan></text><path d="M 104.1337 88.7863 L 98.4769 105.7569 L 41.8574 151.0626 L 87.1631 94.4431 L 104.1337 88.7863" fill="#66cdaa" fill-opacity="1" stroke="none" clip-path="none"></path><text alignment-baseline="middle" x="92.82000000000001" y="64.06400000000001" fill="#333" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 15px; line-height: normal; font-family: &quot;Microsoft YaHei&quot;;"><tspan alignment-baseline="middle" text-anchor="middle" x="92.82000000000001" y="71.56400000000001"></tspan></text><text alignment-baseline="middle" x="92.82000000000001" y="136.13600000000002" fill="#66cdaa" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 28px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="middle" text-anchor="middle" x="92.82000000000001" y="131.13600000000002">0</tspan></text></svg></div></div>
+                                                                                                                                                <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" id="script_4bc293075e97417e2a8e">    /**init rainbow gauge;id from jstl*/    rainbowJs.initChart("4bc293075e97417e2a8e");</script>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="server_binding analog_udc" comp_type="cus_rainbowComponent" show_function="_callback_rainbowOnChange" range="19" address="48" type="4" length="1" show_param="494aa6632695b7773774" d_max="1000" d_min="0" d_title="" id="494aa6632695b7773774" _echarts_instance_="ec_1770459664037" style="position: absolute; left: 248px; top: 50px; width: 182px; height: 182px; transform: rotate(0deg); z-index: 3;" degree="0" tag_id="Private Tag" device_name="" block_format="Unsigned" decimal="1" mode="false" last_background-color="#ffffff" record_opacity="0" detail_fontstyle="normal" detail_fontsize="28" detail_fontfamily="Arial" detail_fontweight="" axislabel_fontstyle="normal" axislabel_fontsize="12" axislabel_fontfamily="Arial" axislabel_fontweight="" detail_color="0.2,#66cdaa,0.8,#4682b4,1,#a52a2a"><div style="overflow: hidden; position: relative; width: 182px; height: 182px; background-color: transparent;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseprofile="full" width="182" height="182" style="position: absolute; left: 0px; top: 0px;"><path d="M 33.3594 159.5606 L 29.1168 163.8032 A 90.09 90.09 0 0 1 3.8392 86.0068 L 9.7653 86.9454 A 84.09 84.09 0 0 0 33.3594 159.5606 Z" fill="#66cdaa" fill-opacity="1" stroke="none" clip-path="none"></path><path d="M 9.7653 86.9454 L 3.8392 86.0068 A 90.09 90.09 0 0 1 181.8008 86.0068 L 175.8747 86.9454 A 84.09 84.09 0 0 0 9.7653 86.9454 Z" fill="#4682b4" fill-opacity="1" stroke="none" clip-path="none"></path><path d="M 175.8747 86.9454 L 181.8008 86.0068 A 90.09 90.09 0 0 1 156.5232 163.8032 L 152.2806 159.5606 A 84.09 84.09 0 0 0 175.8747 86.9454 Z" fill="#a52a2a" fill-opacity="1" stroke="none" clip-path="none"></path><path d="M 29.1168 163.8032 L 39.7234 153.1966" fill="none" stroke="#66cdaa" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="after-edge" x="43.25888570663488" y="149.66111429336513" fill="#66cdaa" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="after-edge" text-anchor="start" x="43.25888570663488" y="149.66111429336513">0</tspan></text><path d="M 29.1168 163.8032 L 36.1878 156.7322" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 23.4045 157.5255 L 31.1096 151.1513" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 18.3083 150.7381 L 26.5791 145.1173" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 13.8735 143.5012 L 22.6366 138.6837" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 10.1395 135.8791 L 19.317 131.9076" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 7.1393 127.9393 L 16.6499 124.8492" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 7.1393 127.9393 L 21.4052 123.3041" fill="none" stroke="#66cdaa" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="middle" x="26.160448772872698" y="121.75900113574009" fill="#66cdaa" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="middle" text-anchor="start" x="26.160448772872698" y="121.75900113574009">100</tspan></text><path d="M 7.1393 127.9393 L 16.6499 124.8492" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 4.8997 119.7525 L 14.6588 117.5711" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 3.4404 111.3913 L 13.3615 110.1379" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 2.7745 102.9298 L 12.7695 102.6157" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 2.9078 94.4432 L 12.888 95.0711" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 3.8392 86.0068 L 13.716 87.5712" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 3.8392 86.0068 L 18.6545 88.3533" fill="none" stroke="#66cdaa" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="middle" x="23.592924207686792" y="89.13550834533028" fill="#66cdaa" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="middle" text-anchor="start" x="23.592924207686792" y="89.13550834533028">200</tspan></text><path d="M 3.8392 86.0068 L 13.716 87.5712" fill="none" stroke="#66cdaa" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 5.5603 77.6955 L 15.2462 80.1824" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 8.0561 69.5831 L 17.4649 72.9705" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 11.3041 61.7415 L 20.3524 65.9993" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 15.2758 54.2405 L 23.8832 59.3309" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 19.9357 47.1464 L 28.0258 53.0243" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 19.9357 47.1464 L 32.0709 55.9632" fill="none" stroke="#4682b4" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="hanging" x="36.11599886425989" y="58.90213166682064" fill="#4682b4" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="hanging" text-anchor="start" x="36.11599886425989" y="58.90213166682064">300</tspan></text><path d="M 19.9357 47.1464 L 28.0258 53.0243" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 25.2425 40.5224 L 32.7436 47.1355" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 31.1492 34.4272 L 37.9946 41.7169" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 37.6032 28.9149 L 43.7323 36.8165" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 44.5474 24.0345 L 49.9056 32.4778" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 51.92 19.8292 L 56.4599 28.7393" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 51.92 19.8292 L 58.7299 33.1943" fill="none" stroke="#4682b4" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="hanging" x="60.99980587325507" y="37.649352719637356" fill="#4682b4" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="hanging" text-anchor="start" x="60.99980587325507" y="37.649352719637356">400</tspan></text><path d="M 51.92 19.8292 L 56.4599 28.7393" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 59.6557 16.3364 L 63.3369 25.6342" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 67.6857 13.5871 L 70.4756 23.1901" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 75.9388 11.6057 L 77.8126 21.4286" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 84.3418 10.4098 L 85.2829 20.3654" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 92.82 10.01 L 92.82 20.01" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 92.82 10.01 L 92.82 25.01" fill="none" stroke="#4682b4" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="hanging" x="92.81999999999985" y="30.010000000000005" fill="#4682b4" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="hanging" text-anchor="middle" x="92.81999999999985" y="30.010000000000005">500</tspan></text><path d="M 92.82 10.01 L 92.82 20.01" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 101.2982 10.4098 L 100.3571 20.3654" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 109.7012 11.6057 L 107.8274 21.4286" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 117.9543 13.5871 L 115.1644 23.1901" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 125.9843 16.3364 L 122.3031 25.6342" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 133.72 19.8292 L 129.1801 28.7393" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 133.72 19.8292 L 126.9101 33.1943" fill="none" stroke="#4682b4" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="hanging" x="124.64019412674469" y="37.64935271963722" fill="#4682b4" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="hanging" text-anchor="end" x="124.64019412674469" y="37.64935271963722">600</tspan></text><path d="M 133.72 19.8292 L 129.1801 28.7393" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 141.0926 24.0345 L 135.7344 32.4778" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 148.0368 28.9149 L 141.9077 36.8165" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 154.4908 34.4272 L 147.6454 41.7169" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 160.3975 40.5224 L 152.8964 47.1355" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 165.7043 47.1464 L 157.6142 53.0243" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 165.7043 47.1464 L 153.5691 55.9632" fill="none" stroke="#4682b4" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="hanging" x="149.52400113573998" y="58.90213166682042" fill="#4682b4" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="hanging" text-anchor="end" x="149.52400113573998" y="58.90213166682042">700</tspan></text><path d="M 165.7043 47.1464 L 157.6142 53.0243" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 170.3642 54.2405 L 161.7568 59.3309" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 174.3359 61.7415 L 165.2876 65.9993" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 177.5839 69.5831 L 168.1751 72.9705" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 180.0797 77.6955 L 170.3938 80.1824" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 181.8008 86.0068 L 171.924 87.5712" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 181.8008 86.0068 L 166.9855 88.3533" fill="none" stroke="#4682b4" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="middle" x="162.0470757923132" y="89.13550834533005" fill="#4682b4" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="middle" text-anchor="end" x="162.0470757923132" y="89.13550834533005">800</tspan></text><path d="M 181.8008 86.0068 L 171.924 87.5712" fill="none" stroke="#4682b4" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 182.7322 94.4432 L 172.752 95.0711" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 182.8655 102.9298 L 172.8705 102.6157" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 182.1996 111.3913 L 172.2785 110.1379" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 180.7403 119.7525 L 170.9812 117.5711" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 178.5007 127.9393 L 168.9901 124.8492" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 178.5007 127.9393 L 164.2348 123.3041" fill="none" stroke="#a52a2a" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="middle" x="159.4795512271274" y="121.7590011357399" fill="#a52a2a" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="middle" text-anchor="end" x="159.4795512271274" y="121.7590011357399">900</tspan></text><path d="M 178.5007 127.9393 L 168.9901 124.8492" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 175.5005 135.8791 L 166.323 131.9076" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 171.7665 143.5012 L 163.0034 138.6837" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 167.3317 150.7381 L 159.0609 145.1173" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 162.2355 157.5255 L 154.5304 151.1513" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 156.5232 163.8032 L 149.4522 156.7322" fill="none" stroke="#a52a2a" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 156.5232 163.8032 L 145.9166 153.1966" fill="none" stroke="#a52a2a" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="after-edge" x="142.38111429336524" y="149.661114293365" fill="#a52a2a" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="after-edge" text-anchor="end" x="142.38111429336524" y="149.661114293365">1000</tspan></text><path d="M 104.1337 88.7863 L 98.4769 105.7569 L 41.8574 151.0626 L 87.1631 94.4431 L 104.1337 88.7863" fill="#66cdaa" fill-opacity="1" stroke="none" clip-path="none"></path><text alignment-baseline="middle" x="92.82000000000001" y="64.06400000000001" fill="#333" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 15px; line-height: normal; font-family: &quot;Microsoft YaHei&quot;;"><tspan alignment-baseline="middle" text-anchor="middle" x="92.82000000000001" y="71.56400000000001"></tspan></text><text alignment-baseline="middle" x="92.82000000000001" y="136.13600000000002" fill="#66cdaa" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 28px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="middle" text-anchor="middle" x="92.82000000000001" y="131.13600000000002">0</tspan></text></svg></div></div>
+                                                                                                                                                <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" id="script_494aa6632695b7773774">    /**init rainbow gauge;id from jstl*/    rainbowJs.initChart("494aa6632695b7773774");</script>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="server_binding analog_input" comp_type="AnalogValueComponent" comp_version="8.3" show_function="_callback_analogValue" style="border: 0px solid red; text-align: right; position: absolute; left: 108px; top: 210px; width: 64px; height: 24px; transform: rotate(0deg); background-color: rgb(204, 204, 204); z-index: 4;" range="132" address="800" type="4" length="1" show_param="4ac6bac2f6eb96a5152c" id="4ac6bac2f6eb96a5152c" degree="0" tag_id="Private Tag" device_name="" block_format="Unsigned" decimal="1" mode="false" text_align="left">
+                                                                                                                                                                                                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <style class="invalid4ac6bac2f6eb96a5152c">.invalid4ac6bac2f6eb96a5152c:-moz-placeholder {color: rgb(0,0,0);}.invalid4ac6bac2f6eb96a5152c::-moz-placeholder {color: rgb(0,0,0);}input.invalid4ac6bac2f6eb96a5152c:-ms-input-placeholder {color: rgb(0,0,0);}input.invalid4ac6bac2f6eb96a5152c::-webkit-input-placeholder {color: rgb(0,0,0);}</style>
+                                                                                                                                                                                                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="valueText" style="">
+                                                                                                                                                                                                                                                        <input class="inputVal invalid4ac6bac2f6eb96a5152c" type="text" size="5" value="" style="width: 100%; height: 100%; text-align: left; cursor: not-allowed; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); background-color: rgb(204, 204, 204);">        <span class="unit" style="position: absolute; top: 5px; font-style: normal; font-family: Arial; font-size: 14px; line-height: 14px; color: rgb(0, 0, 0);">%</span>    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                </div>
+                                                                                                                                                                                                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="notice" style="color: red; font-style: normal; font-family: Arial; font-size: 14px;"></div>
+                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+                                                                                                                                                <script type="text/javascript" id="script_4ac6bac2f6eb96a5152c"></script>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="server_binding analog_input" comp_type="AnalogValueComponent" comp_version="8.3" show_function="_callback_analogValue" style="border: 0px solid red; text-align: right; position: absolute; left: 308px; top: 210px; width: 64px; height: 24px; transform: rotate(0deg); background-color: rgb(204, 204, 204); z-index: 5;" range="132" address="600" type="4" length="1" show_param="4e95a0a355e0f186a608" id="4e95a0a355e0f186a608" degree="0" tag_id="Private Tag" device_name="" block_format="Unsigned" decimal="1" mode="true" text_align="left">
+                                                                                                                                                                                                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <style class="invalid4e95a0a355e0f186a608">.invalid4e95a0a355e0f186a608:-moz-placeholder {color: rgb(0,0,0);}.invalid4e95a0a355e0f186a608::-moz-placeholder {color: rgb(0,0,0);}input.invalid4e95a0a355e0f186a608:-ms-input-placeholder {color: rgb(0,0,0);}input.invalid4e95a0a355e0f186a608::-webkit-input-placeholder {color: rgb(0,0,0);}</style>
+                                                                                                                                                                                                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="valueText" style="">
+                                                                                                                                                                                                                                                        <input class="inputVal invalid4e95a0a355e0f186a608" type="text" size="5" value="" style="width: 100%; height: 100%; text-align: left; cursor: default; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); background-color: rgb(204, 204, 204);">        <span class="unit" style="position: absolute; top: 5px; font-style: normal; font-family: Arial; font-size: 14px; line-height: 14px; color: rgb(0, 0, 0);"></span>    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                </div>
+                                                                                                                                                                                                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="notice" style="color: red; font-style: normal; font-family: Arial; font-size: 14px;"></div>
+                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+                                                                                                                                                <script type="text/javascript" id="script_4e95a0a355e0f186a608"></script>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 98px; top: 427px; width: 84px; height: 84px; background-size: 84px 85px; transform: rotate(0deg); background-image: url(&quot;img/Default.png&quot;); cursor: pointer; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 6; background-repeat: no-repeat no-repeat;" range="132" address="56" type="1" length="1" on_text="OFF" off_text="ON" id="486a83bc5e6cdb9f46c9" show_param="486a83bc5e6cdb9f46c9" degree="0" tag_id="Private Tag" device_name="" on_image="img/Default.png" off_image="img/Default.png" bg_image="img/Default.png" mode="true" text_align="center" onclick="renderJs.setDigitalData(this)">
+                                                                                                                                                                                                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <p style="width: 84px; height: 84px; display: table-cell; vertical-align: middle; text-align: center;">ON</p>
+                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+                                                                                                                                                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 298px; top: 427px; width: 84px; height: 84px; background-size: 84px 85px; transform: rotate(0deg); background-image: url(&quot;img/Default.png&quot;); cursor: pointer; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 7; background-repeat: no-repeat no-repeat;" range="132" address="57" type="1" length="1" on_text="ON" off_text="OFF" id="403cb1b60671e3367256" show_param="403cb1b60671e3367256" degree="0" tag_id="Private Tag" device_name="" on_image="img/Default.png" off_image="img/Default.png" bg_image="img/Default.png" mode="true" text_align="center" onclick="renderJs.setDigitalData(this)">
+                                                                                                                                                                                                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <p style="width: 84px; height: 84px; display: table-cell; vertical-align: middle; text-align: center;">OFF</p>
+                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+                                                                                                                                                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 298px; top: 13px; width: 84px; height: 41px; background-size: 84px 42px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 8; background-repeat: no-repeat no-repeat;" id="4cd7ba9d1c1b3d699671" degree="0" text_align="center">
+                                                                                                                                                                                                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 84px; height: 41px;">ketel stook kracht</p>
+                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+                                                                                                                                                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 98px; top: 13px; width: 84px; height: 41px; background-size: 84px 42px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 9; background-repeat: no-repeat no-repeat;" id="46b9a0343a04306d2b75" degree="0" text_align="center">
+                                                                                                                                                                                                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 84px; height: 41px;">3 wegklep werkplaats</p>
+                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+                                                                                                                                                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 98px; top: 370px; width: 84px; height: 41px; background-size: 84px 42px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 10; background-repeat: no-repeat no-repeat;" id="44bab660d09a4165b206" degree="0" text_align="center">
+                                                                                                                                                                                                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 84px; height: 41px;">extra afzuiging </p>
+                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+                                                                                                                                                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 298px; top: 370px; width: 84px; height: 41px; background-size: 84px 42px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 11; background-repeat: no-repeat no-repeat;" id="49b5b808a3a36f321629" degree="0" text_align="center">
+                                                                                                                                                                                                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 84px; height: 41px;">blazer zaal 1</p>
+                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+                                                                                                                                            
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 499px; top: 427px; width: 84px; height: 84px; background-size: 84px 85px; transform: rotate(0deg); background-image: url(&quot;img/Default.png&quot;); cursor: pointer; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 12; background-repeat: no-repeat no-repeat;" range="131" address="35" type="1" length="1" on_text="ON" off_text="OFF" id="4ddc99d54a574cb63418" show_param="4ddc99d54a574cb63418" degree="0" tag_id="Private Tag" device_name="" on_image="img/Default.png" off_image="img/Default.png" bg_image="img/Default.png" mode="true" onclick="renderJs.setDigitalData(this)" text_align="center">
+                                                                                                                                                                
+                
+                
+                
+                
+                
+                
+                
+                
+                <p style="width: 84px; height: 84px; display: table-cell; vertical-align: middle; text-align: center;">OFF</p>
+                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+                                                                                                                        
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 499px; top: 370px; width: 84px; height: 41px; background-size: 84px 42px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 13; background-repeat: no-repeat no-repeat;" id="476f83bee734a38d995f" degree="0" text_align="center">
+                                                                                                                                                                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 84px; height: 41px;">stoken</p>
+                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+                                                                                                                        
+            
+            
+            
+            
+            
+            
+            
+            
+            <div comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 98px; top: 629px; width: 84px; height: 84px; background-size: 84px 85px; transform: rotate(0deg); background-image: url(&quot;img/Default.png&quot;); cursor: pointer; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 14; background-repeat: no-repeat no-repeat;" range="131" address="36" type="1" length="1" on_text="ON" off_text="OFF" id="48e4bc5aba0f26d7f0a1" show_param="48e4bc5aba0f26d7f0a1" degree="0" tag_id="Private Tag" device_name="" on_image="img/Default.png" off_image="img/Default.png" bg_image="img/Default.png" mode="true" onclick="renderJs.setDigitalData(this)" text_align="center">
+                                                                                                                                                                
+                
+                
+                
+                
+                
+                
+                
+                
+                <p style="width: 84px; height: 84px; display: table-cell; vertical-align: middle; text-align: center;">OFF</p>
+                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+                                                                                                                        
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 98px; top: 572px; width: 84px; height: 41px; background-size: 84px 42px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 15; background-repeat: no-repeat no-repeat;" id="4955b563c4be90808950" degree="0" text_align="center">
+                                                                                                                                                                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 84px; height: 41px;">circulatie pomp</p>
+                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+                                                                                                                    
+            
+            
+            
+            
+            
+            
+            
+            
+            <div comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 573px; top: 50px; width: 84px; height: 84px; background-size: 84px 85px; transform: rotate(0deg); background-image: url(&quot;img/Default.png&quot;); cursor: pointer; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 16; background-repeat: no-repeat no-repeat;" range="131" address="38" type="1" length="1" on_text="ON" off_text="OFF" id="418eb29c496a62fbca87" show_param="418eb29c496a62fbca87" degree="0" tag_id="Private Tag" device_name="" on_image="img/Default.png" off_image="img/Default.png" bg_image="img/Default.png" mode="true" text_align="center" onclick="renderJs.setDigitalData(this)">
+                                                                                                                                                
+                
+                
+                
+                
+                
+                
+                
+                <p style="width: 84px; height: 84px; display: table-cell; vertical-align: middle; text-align: center;">OFF</p>
+                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 573px; top: 0px; width: 84px; height: 41px; background-size: 84px 42px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 17; background-repeat: no-repeat no-repeat;" id="4a42abad207a24ace734" degree="0" text_align="center">
+                                                                                                                                                    
+                
+                
+                
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 84px; height: 41px;">licht</p>
+                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+                                                                                                        
+        
+            
+            
+            
+            
+            
+            
+            <div comp_type="linkComponent" class="textCenter" link_type="0" url="https://195.240.122.183//webroot/page_1.htm" unique_name=" " original_name=" " response_mode="1" version="83" id="41a0bb97ad78c26a62c9" style="position: absolute; left: 573px; top: 200px; width: 84px; height: 34px; background-size: 84px 35px; line-height: 34px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); text-align: center; z-index: 18; background-repeat: no-repeat no-repeat;" degree="0" text_align="center" title="https://195.240.122.183//webroot/page_1.htm">
+                                                                                                                                                                                                                                                                                                                        <a class="textCenter" href="#" onclick="renderJs.openLinkInNewWindow(this)" style="color: rgb(0, 0, 0);">pdf opvragen</a>                                                                                                                                                
+            
+            
+            
+            
+            
+            
+            </div>
+                                                                                
+            
+            
+            
+            
+            
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 84px; cursor: pointer; position: absolute; left: 298px; top: 629px; width: 84px; height: 84px; background-size: 84px 85px; transform: rotate(0deg); background-image: url(&quot;img/Default.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 19; background-repeat: no-repeat no-repeat;" range="132" address="59" type="1" length="1" on_text="ON" off_text="OFF push" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="45b7b8c45acdb3ac886c" show_param="45b7b8c45acdb3ac886c" degree="0" tag_id="Private Tag" device_name="" on_image="img/Default.png" off_image="img/Default.png" bg_image="img/Default.png" mode="true" text_align="center">
+                                                                                                    
+                
+                
+                
+                
+                
+                <p style="width: 84px; height: 84px; display: table-cell; vertical-align: middle; text-align: center;">OFF push</p>
+                                                                                            
+            
+            
+            
+            
+            </div>
+                                                                        
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 298px; top: 572px; width: 84px; height: 41px; background-size: 84px 42px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 20; background-repeat: no-repeat no-repeat;" id="4086a1a73c1aaac86902" degree="0" text_align="center">
+                                                                                                    
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 84px; height: 41px;">afzuiging dojo</p>
+                                                                                            
+            
+            
+            
+            
+            </div>
+                                                                        
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 820px; top: 24px; width: 84px; height: 41px; background-size: 84px 42px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 21; background-repeat: no-repeat no-repeat;" id="4c68a83422e3644e3a6c" degree="0" text_align="center">
+                                                                                                    
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 84px; height: 41px;">
+                                                                                                                        bg color
+                    
+                    
+                    
+                    
+                    
+                    <br>
+                                                                                                                        #FFF5EE
+                
+                
+                
+                
+                
+                </p>
+                                                                                            
+            
+            
+            
+            
+            </div>
+                                                                    
+            
+            
+            
+            
+            <div comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 499px; top: 629px; width: 84px; height: 84px; background-size: 84px 85px; transform: rotate(0deg); background-image: url(&quot;img/Default.png&quot;); cursor: pointer; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 22; background-repeat: no-repeat no-repeat;" range="132" address="61" type="1" length="1" on_text="ON" off_text="OFF" id="49c98b2c77bcadbac8f5" show_param="49c98b2c77bcadbac8f5" degree="0" tag_id="Private Tag" device_name="" on_image="img/Default.png" off_image="img/Default.png" bg_image="img/Default.png" mode="true" onclick="renderJs.setDigitalData(this)" text_align="center">
+                                                                                
+                
+                
+                
+                <p style="width: 84px; height: 84px; display: table-cell; vertical-align: middle; text-align: center;">OFF</p>
+                                                                            
+            
+            
+            
+            </div>
+                                                            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 499px; top: 572px; width: 84px; height: 41px; background-size: 84px 42px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 23; background-repeat: no-repeat no-repeat;" id="4116aa744eaa77faca43" degree="0" text_align="center">
+                                                                                    
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 84px; height: 41px;">lucht wand</p>
+                                                                            
+            
+            
+            
+            </div>
+                                                        
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 707px; top: 0px; width: 84px; height: 41px; background-size: 84px 42px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 25; background-repeat: no-repeat no-repeat;" id="4aec882b36fda0126fd9" degree="0" text_align="center">
+                                                                    
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 84px; height: 41px;">
+                                                                                uit en stil
+                    
+                    
+                    
+                    <br>
+                                                                                code
+                
+                
+                
+                </p>
+                                                            
+            
+            
+            </div>
+                                                
+            
+            
+            <div class="server_binding analog_input" comp_type="AnalogValueComponent" comp_version="8.3" show_function="_callback_analogValue" style="border: 0px solid red; text-align: right; position: absolute; left: 701px; top: 57px; width: 97px; height: 22px; transform: rotate(0deg); background-color: rgb(153, 153, 153); z-index: 25;" range="20" address="1008" type="4" length="1" show_param="43dda3ec29c935390671" id="43dda3ec29c935390671" degree="0" tag_id="Private Tag" device_name="" block_format="Unsigned" decimal="1" mode="true" text_align="left">
+                                                                    
+                
+                
+                
+                <style class="invalid43dda3ec29c935390671">.invalid43dda3ec29c935390671:-moz-placeholder {color: rgb(0,0,0);}.invalid43dda3ec29c935390671::-moz-placeholder {color: rgb(0,0,0);}input.invalid43dda3ec29c935390671:-ms-input-placeholder {color: rgb(0,0,0);}input.invalid43dda3ec29c935390671::-webkit-input-placeholder {color: rgb(0,0,0);}</style>
+                                                                
+                
+                
+                <div class="valueText" style="">
+                                                                                        <input class="inputVal invalid43dda3ec29c935390671" type="text" size="5" value="" style="width: 100%; height: 100%; text-align: left; cursor: default; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); background-color: rgb(153, 153, 153);">        <span class="unit" style="position: absolute; top: 4px; font-style: normal; font-family: Arial; font-size: 14px; line-height: 14px; color: rgb(0, 0, 0);"></span>    
+                
+                
+                
+                </div>
+                                                                    
+                
+                
+                
+                <div class="notice" style="color: red; font-style: normal; font-family: Arial; font-size: 14px;"></div>
+                                                            
+            
+            
+            </div>
+                                                <script type="text/javascript" id="script_43dda3ec29c935390671"></script>
+            
+            
+            
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 42px; cursor: pointer; position: absolute; left: 727px; top: 81px; width: 44px; height: 42px; background-size: 44px 43px; transform: rotate(0deg); background-image: url(&quot;img/pb_stop.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 26; background-repeat: no-repeat no-repeat;" range="132" address="6807" type="1" length="1" on_text="ON" off_text="OFF" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="414d96cdbb67582d0ed2" show_param="414d96cdbb67582d0ed2" degree="0" tag_id="Private Tag" device_name="" on_image="img/pb_go.png" off_image="img/pb_stop.png" bg_image="img/pb_stop.png" mode="true" text_align="center">
+                                                                    
+                
+                
+                
+                <p style="width: 44px; height: 42px; display: table-cell; vertical-align: middle; text-align: center;">OFF</p>
+                                                            
+            
+            
+            </div>
+                                            
+        
+            
+            <div class="server_binding analog_udc" comp_type="cus_rainbowComponent" show_function="_callback_rainbowOnChange" range="19" address="16" type="4" length="1" show_param="47c99530a667693f0e8d" d_max="1000" d_min="0" d_title="" id="47c99530a667693f0e8d" _echarts_instance_="ec_1770459664038" style="position: absolute; left: 657px; top: 527px; width: 182px; height: 182px; transform: rotate(0deg); z-index: 27;" degree="0" tag_id="Private Tag" device_name="" block_format="Unsigned" decimal="1" mode="false" last_background-color="#ffffff" record_opacity="0" detail_fontstyle="normal" detail_fontsize="28" detail_fontfamily="Arial" detail_fontweight="" axislabel_fontstyle="normal" axislabel_fontsize="12" axislabel_fontfamily="Arial" axislabel_fontweight="" detail_color="0.5,#6666ff,1,#ff6666"><div style="overflow: hidden; position: relative; width: 182px; height: 182px; background-color: transparent;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseprofile="full" width="182" height="182" style="position: absolute; left: 0px; top: 0px;"><path d="M 33.3594 159.5606 L 29.1168 163.8032 A 90.09 90.09 0 0 1 92.82 10.01 L 92.82 16.01 A 84.09 84.09 0 0 0 33.3594 159.5606 Z" fill="#6666ff" fill-opacity="1" stroke="none" clip-path="none"></path><path d="M 92.82 16.01 L 92.82 10.01 A 90.09 90.09 0 0 1 156.5232 163.8032 L 152.2806 159.5606 A 84.09 84.09 0 0 0 92.82 16.01 Z" fill="#ff6666" fill-opacity="1" stroke="none" clip-path="none"></path><path d="M 29.1168 163.8032 L 39.7234 153.1966" fill="none" stroke="#6666ff" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="after-edge" x="43.25888570663488" y="149.66111429336513" fill="#6666ff" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="after-edge" text-anchor="start" x="43.25888570663488" y="149.66111429336513">0</tspan></text><path d="M 29.1168 163.8032 L 36.1878 156.7322" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 23.4045 157.5255 L 31.1096 151.1513" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 18.3083 150.7381 L 26.5791 145.1173" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 13.8735 143.5012 L 22.6366 138.6837" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 10.1395 135.8791 L 19.317 131.9076" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 7.1393 127.9393 L 16.6499 124.8492" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 7.1393 127.9393 L 21.4052 123.3041" fill="none" stroke="#6666ff" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="middle" x="26.160448772872698" y="121.75900113574009" fill="#6666ff" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="middle" text-anchor="start" x="26.160448772872698" y="121.75900113574009">100</tspan></text><path d="M 7.1393 127.9393 L 16.6499 124.8492" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 4.8997 119.7525 L 14.6588 117.5711" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 3.4404 111.3913 L 13.3615 110.1379" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 2.7745 102.9298 L 12.7695 102.6157" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 2.9078 94.4432 L 12.888 95.0711" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 3.8392 86.0068 L 13.716 87.5712" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 3.8392 86.0068 L 18.6545 88.3533" fill="none" stroke="#6666ff" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="middle" x="23.592924207686792" y="89.13550834533028" fill="#6666ff" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="middle" text-anchor="start" x="23.592924207686792" y="89.13550834533028">200</tspan></text><path d="M 3.8392 86.0068 L 13.716 87.5712" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 5.5603 77.6955 L 15.2462 80.1824" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 8.0561 69.5831 L 17.4649 72.9705" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 11.3041 61.7415 L 20.3524 65.9993" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 15.2758 54.2405 L 23.8832 59.3309" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 19.9357 47.1464 L 28.0258 53.0243" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 19.9357 47.1464 L 32.0709 55.9632" fill="none" stroke="#6666ff" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="hanging" x="36.11599886425989" y="58.90213166682064" fill="#6666ff" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="hanging" text-anchor="start" x="36.11599886425989" y="58.90213166682064">300</tspan></text><path d="M 19.9357 47.1464 L 28.0258 53.0243" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 25.2425 40.5224 L 32.7436 47.1355" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 31.1492 34.4272 L 37.9946 41.7169" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 37.6032 28.9149 L 43.7323 36.8165" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 44.5474 24.0345 L 49.9056 32.4778" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 51.92 19.8292 L 56.4599 28.7393" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 51.92 19.8292 L 58.7299 33.1943" fill="none" stroke="#6666ff" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="hanging" x="60.99980587325507" y="37.649352719637356" fill="#6666ff" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="hanging" text-anchor="start" x="60.99980587325507" y="37.649352719637356">400</tspan></text><path d="M 51.92 19.8292 L 56.4599 28.7393" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 59.6557 16.3364 L 63.3369 25.6342" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 67.6857 13.5871 L 70.4756 23.1901" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 75.9388 11.6057 L 77.8126 21.4286" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 84.3418 10.4098 L 85.2829 20.3654" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 92.82 10.01 L 92.82 20.01" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 92.82 10.01 L 92.82 25.01" fill="none" stroke="#6666ff" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="hanging" x="92.81999999999985" y="30.010000000000005" fill="#6666ff" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="hanging" text-anchor="middle" x="92.81999999999985" y="30.010000000000005">500</tspan></text><path d="M 92.82 10.01 L 92.82 20.01" fill="none" stroke="#6666ff" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 101.2982 10.4098 L 100.3571 20.3654" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 109.7012 11.6057 L 107.8274 21.4286" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 117.9543 13.5871 L 115.1644 23.1901" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 125.9843 16.3364 L 122.3031 25.6342" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 133.72 19.8292 L 129.1801 28.7393" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 133.72 19.8292 L 126.9101 33.1943" fill="none" stroke="#ff6666" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="hanging" x="124.64019412674469" y="37.64935271963722" fill="#ff6666" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="hanging" text-anchor="end" x="124.64019412674469" y="37.64935271963722">600</tspan></text><path d="M 133.72 19.8292 L 129.1801 28.7393" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 141.0926 24.0345 L 135.7344 32.4778" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 148.0368 28.9149 L 141.9077 36.8165" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 154.4908 34.4272 L 147.6454 41.7169" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 160.3975 40.5224 L 152.8964 47.1355" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 165.7043 47.1464 L 157.6142 53.0243" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 165.7043 47.1464 L 153.5691 55.9632" fill="none" stroke="#ff6666" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="hanging" x="149.52400113573998" y="58.90213166682042" fill="#ff6666" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="hanging" text-anchor="end" x="149.52400113573998" y="58.90213166682042">700</tspan></text><path d="M 165.7043 47.1464 L 157.6142 53.0243" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 170.3642 54.2405 L 161.7568 59.3309" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 174.3359 61.7415 L 165.2876 65.9993" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 177.5839 69.5831 L 168.1751 72.9705" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 180.0797 77.6955 L 170.3938 80.1824" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 181.8008 86.0068 L 171.924 87.5712" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 181.8008 86.0068 L 166.9855 88.3533" fill="none" stroke="#ff6666" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="middle" x="162.0470757923132" y="89.13550834533005" fill="#ff6666" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="middle" text-anchor="end" x="162.0470757923132" y="89.13550834533005">800</tspan></text><path d="M 181.8008 86.0068 L 171.924 87.5712" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 182.7322 94.4432 L 172.752 95.0711" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 182.8655 102.9298 L 172.8705 102.6157" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 182.1996 111.3913 L 172.2785 110.1379" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 180.7403 119.7525 L 170.9812 117.5711" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 178.5007 127.9393 L 168.9901 124.8492" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 178.5007 127.9393 L 164.2348 123.3041" fill="none" stroke="#ff6666" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="middle" x="159.4795512271274" y="121.7590011357399" fill="#ff6666" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="middle" text-anchor="end" x="159.4795512271274" y="121.7590011357399">900</tspan></text><path d="M 178.5007 127.9393 L 168.9901 124.8492" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 175.5005 135.8791 L 166.323 131.9076" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 171.7665 143.5012 L 163.0034 138.6837" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 167.3317 150.7381 L 159.0609 145.1173" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 162.2355 157.5255 L 154.5304 151.1513" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 156.5232 163.8032 L 149.4522 156.7322" fill="none" stroke="#ff6666" stroke-width="1" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><path d="M 156.5232 163.8032 L 145.9166 153.1966" fill="none" stroke="#ff6666" stroke-width="2" paint-order="fill" stroke-opacity="1" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="none"></path><text alignment-baseline="after-edge" x="142.38111429336524" y="149.661114293365" fill="#ff6666" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="after-edge" text-anchor="end" x="142.38111429336524" y="149.661114293365">1000</tspan></text><path d="M 104.1337 88.7863 L 98.4769 105.7569 L 41.8574 151.0626 L 87.1631 94.4431 L 104.1337 88.7863" fill="#6666ff" fill-opacity="1" stroke="none" clip-path="none"></path><text alignment-baseline="middle" x="92.82000000000001" y="64.06400000000001" fill="#333" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 15px; line-height: normal; font-family: &quot;Microsoft YaHei&quot;;"><tspan alignment-baseline="middle" text-anchor="middle" x="92.82000000000001" y="71.56400000000001"></tspan></text><text alignment-baseline="middle" x="92.82000000000001" y="136.13600000000002" fill="#6666ff" fill-opacity="1" stroke="none" clip-path="none" style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 28px; line-height: normal; font-family: Arial;"><tspan alignment-baseline="middle" text-anchor="middle" x="92.82000000000001" y="131.13600000000002">0</tspan></text></svg></div></div>
+                        <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" id="script_47c99530a667693f0e8d">    /**init rainbow gauge;id from jstl*/    rainbowJs.initChart("47c99530a667693f0e8d");</script>
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 707px; top: 670px; width: 84px; height: 41px; background-size: 84px 42px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 28; background-repeat: no-repeat no-repeat;" id="41b887c465253d7143f8" degree="0" text_align="center">
+                                    
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 84px; height: 41px;">
+                                        3weg fitness
+                    
+                    <br>
+                                        1000=vol fit
+                
+                </p>
+                            
+            </div>
+                    
+        </div> 
+        </div>
+        <div id="timeout_dlg" style="display: none">Please check the network connection!</div>
+    
+
+
+</body></html>

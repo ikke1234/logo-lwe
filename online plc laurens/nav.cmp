@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page height="900" width="600">
+    <Components>
+        <Component class="com.siemens.logo.udwp.editor.component.NavPageComponent" id="nav" name="Nav Page">
+            <ComponentProperty class="NameProperty" id="PROPERTY_Name" value="Nav Page"/>
+            <ComponentProperty class="BasicProperty$IDProperty" id="PROPERTY_Component_Id" value="nav"/>
+            <ComponentProperty class="BasicProperty$ZIndex" id="PROPERTY_ZIndex" value="0"/>
+            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="0@-@0"/>
+            <ComponentProperty class="BoundsProperty$Size" id="PROPERTY_Size" value="600@-@900"/>
+            <ComponentProperty class="BasicProperty$Degree" id="PROPERTY_Degree" value="0"/>
+            <ComponentProperty class="BoundsProperty$MaxSize" id="PROPERTY_MAX_SIZE" value="3000@-@3000"/>
+            <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="80@-@80"/>
+            <ComponentProperty class="BoundsProperty$MaxPosition" id="PROPERTY_MAX_POSITION" value="1450@-@910"/>
+            <ComponentProperty class="BoundsProperty$MinPosition" id="PROPERTY_MIN_POSITION" value="0@-@0"/>
+            <ComponentProperty class="NavItemProperty$NavDisplayStyle" id="PROPERTY_Nav_Display_Style" value="0"/>
+            <ComponentProperty class="BasicColorProperty$NavMenuBackgroundColorProperty" id="PROPERTY_backgroundColor" value="158@-@157@-@131"/>
+            <ComponentProperty class="BasicColorProperty$NavFontColorProperty" id="PROPERTY_NAV_TEXT_COLOR" value="255@-@255@-@255"/>
+        </Component>
+        <Component class="com.siemens.logo.udwp.editor.component.NavItemComponent" id="46eb9ba2d0f6ea683509" name="NavItem">
+            <ComponentProperty class="NameProperty" id="PROPERTY_Name" value="NavItem"/>
+            <ComponentProperty class="BasicProperty$IDProperty" id="PROPERTY_Component_Id" value="46eb9ba2d0f6ea683509"/>
+            <ComponentProperty class="BasicProperty$ZIndex" id="PROPERTY_ZIndex" value="0"/>
+            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="201@-@107"/>
+            <ComponentProperty class="BoundsProperty$Size" id="PROPERTY_Size" value="200@-@57"/>
+            <ComponentProperty class="BasicProperty$Degree" id="PROPERTY_Degree" value="0"/>
+            <ComponentProperty class="BoundsProperty$MaxSize" id="PROPERTY_MAX_SIZE" value="550@-@850"/>
+            <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="50@-@50"/>
+            <ComponentProperty class="BoundsProperty$MaxPosition" id="PROPERTY_MAX_POSITION" value="201@-@1126"/>
+            <ComponentProperty class="BoundsProperty$MinPosition" id="PROPERTY_MIN_POSITION" value="0@-@0"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Arial@-@0@-@14"/>
+            <ComponentProperty class="NavItemProperty$ItemLink" id="PROPERTY_Link" value="Home Page"/>
+            <ComponentProperty class="NavItemProperty$ItemText" id="PROPERTY_Link_Text" value="Home Page"/>
+        </Component>
+        <Component class="com.siemens.logo.udwp.editor.component.NavItemComponent" id="49ad997b676711d7ee4f" name="NavItem">
+            <ComponentProperty class="NameProperty" id="PROPERTY_Name" value="NavItem"/>
+            <ComponentProperty class="BasicProperty$IDProperty" id="PROPERTY_Component_Id" value="49ad997b676711d7ee4f"/>
+            <ComponentProperty class="BasicProperty$ZIndex" id="PROPERTY_ZIndex" value="0"/>
+            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="201@-@158"/>
+            <ComponentProperty class="BoundsProperty$Size" id="PROPERTY_Size" value="200@-@57"/>
+            <ComponentProperty class="BasicProperty$Degree" id="PROPERTY_Degree" value="0"/>
+            <ComponentProperty class="BoundsProperty$MaxSize" id="PROPERTY_MAX_SIZE" value="550@-@850"/>
+            <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="50@-@50"/>
+            <ComponentProperty class="BoundsProperty$MaxPosition" id="PROPERTY_MAX_POSITION" value="201@-@910"/>
+            <ComponentProperty class="BoundsProperty$MinPosition" id="PROPERTY_MIN_POSITION" value="0@-@0"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Arial@-@0@-@14"/>
+            <ComponentProperty class="NavItemProperty$ItemLink" id="PROPERTY_Link" value="STORING TABLAT"/>
+            <ComponentProperty class="NavItemProperty$ItemText" id="PROPERTY_Link_Text" value="STORING TABLAT"/>
+        </Component>
+        <Component class="com.siemens.logo.udwp.editor.component.NavItemComponent" id="47718786ca421b2ff42e" name="NavItem">
+            <ComponentProperty class="NameProperty" id="PROPERTY_Name" value="NavItem"/>
+            <ComponentProperty class="BasicProperty$IDProperty" id="PROPERTY_Component_Id" value="47718786ca421b2ff42e"/>
+            <ComponentProperty class="BasicProperty$ZIndex" id="PROPERTY_ZIndex" value="0"/>
+            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="201@-@209"/>
+            <ComponentProperty class="BoundsProperty$Size" id="PROPERTY_Size" value="200@-@57"/>
+            <ComponentProperty class="BasicProperty$Degree" id="PROPERTY_Degree" value="0"/>
+            <ComponentProperty class="BoundsProperty$MaxSize" id="PROPERTY_MAX_SIZE" value="550@-@850"/>
+            <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="50@-@50"/>
+            <ComponentProperty class="BoundsProperty$MaxPosition" id="PROPERTY_MAX_POSITION" value="201@-@910"/>
+            <ComponentProperty class="BoundsProperty$MinPosition" id="PROPERTY_MIN_POSITION" value="0@-@0"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Arial@-@0@-@14"/>
+            <ComponentProperty class="NavItemProperty$ItemLink" id="PROPERTY_Link" value="LOGO! System Page"/>
+            <ComponentProperty class="NavItemProperty$ItemText" id="PROPERTY_Link_Text" value="LOGO! System Page"/>
+        </Component>
+        <Component class="com.siemens.logo.udwp.editor.component.NavItemComponent" id="4a43a12fee862d1fb666" name="NavItem">
+            <ComponentProperty class="NameProperty" id="PROPERTY_Name" value="NavItem"/>
+            <ComponentProperty class="BasicProperty$IDProperty" id="PROPERTY_Component_Id" value="4a43a12fee862d1fb666"/>
+            <ComponentProperty class="BasicProperty$ZIndex" id="PROPERTY_ZIndex" value="0"/>
+            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="201@-@260"/>
+            <ComponentProperty class="BoundsProperty$Size" id="PROPERTY_Size" value="200@-@57"/>
+            <ComponentProperty class="BasicProperty$Degree" id="PROPERTY_Degree" value="0"/>
+            <ComponentProperty class="BoundsProperty$MaxSize" id="PROPERTY_MAX_SIZE" value="1400@-@800"/>
+            <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="50@-@50"/>
+            <ComponentProperty class="BoundsProperty$MaxPosition" id="PROPERTY_MAX_POSITION" value="201@-@910"/>
+            <ComponentProperty class="BoundsProperty$MinPosition" id="PROPERTY_MIN_POSITION" value="0@-@0"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Arial@-@0@-@14"/>
+            <ComponentProperty class="NavItemProperty$ItemLink" id="PROPERTY_Link" value="debug"/>
+            <ComponentProperty class="NavItemProperty$ItemText" id="PROPERTY_Link_Text" value="debug"/>
+        </Component>
+    </Components>
+</Page>

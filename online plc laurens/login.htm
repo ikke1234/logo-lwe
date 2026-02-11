@@ -1,0 +1,239 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="author" content="Matthias Edler-Golla, wachenfeld-golla.de">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta http-equiv="Pragma" content="no-cache"> 
+        <meta http-equiv="Cache-control" content="no-cache, must-revalidate"> 
+        <meta http-equiv="Expires" content="0"> 
+
+        <style type="text/css">
+            body{
+                // background-image: url(img/default.jpg); 
+                background: gray;
+                background-size: 100%;
+
+                -moz-user-select: none; /*ff*/
+                -webkit-user-select: none; /*webkit*/
+                -ms-user-select: none; /*IE10*/
+                -khtml-user-select: none; /*old*/
+                user-select: none;
+            }
+            #wrap{
+                position:relative;
+                margin: auto;
+            }
+            #main{
+                position:relative;
+                margin: auto;
+                padding:0;
+                top:0;
+                left:0;
+                background-color: white;
+                //border:1px solid red;
+            }
+            .textCenter{
+                //MARGIN-LEFT: auto;
+                vertical-align:middle;
+                text-align:center;
+                //word-wrap:break-word;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        </style>
+        <link href="js/jqueryui/jqueryui.css" rel="stylesheet" type="text/css">
+        <!-- this script helps older IE versions to understand html5 -->
+        <!--[if lt IE 9 ]>
+            <script src="js/html5.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="/js/utility.js?rdm=176743469"></script>
+        <script type="text/javascript" src="/js/storage.js?rdm=176743469"></script>
+        <script type="text/javascript" src="/js/bigint.js?rdm=176743469"></script>
+        <script type="text/javascript" src="/js/encrypt.js?rdm=176743469"></script>
+        <script type="text/javascript" src="/js/ajax.js?rdm=176743469"></script>
+        <script type="text/javascript" src="/js/login.js?rdm=176743469"></script>
+        <script type="text/javascript" src="/js/pagecommon.js?rdm=176743469"></script>
+        <script type="text/javascript" src="js/jquery.js?rdm=176743469"></script>
+        <script type="text/javascript" src="js/jqueryui/jqueryui.js?rdm=176743469"></script>
+        <script type="text/javascript" src="js/map.js?rdm=176743469"></script>
+        <script type="text/javascript" src="js/render.js?rdm=176743469"></script>
+        <script src="js/login.js?rdm=1767434695503" type="text/javascript" id="js/login.js"></script>
+ 
+        <script type="text/javascript" language="javascript">
+            $(document).ready(function () {
+                if ($("#wrap")) {
+                    /**only works in runtime*/
+                    _initLoginPage();
+                }
+            });
+        </script>
+    </head>
+    <body class="login" logo_public_key1="0" logo_public_key2="0" page_tag="login">  
+        <div style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;z-index: 1000; background-color:gray;opacity: 0.98;" id="loadingDiv">
+            <p style="position: relative;text-align: center;color:white;top: 45%;" class="blink">LOADING...</p>
+        </div>
+        <div id="wrap" n="login">
+            <div id="main" style="width: 1420px; height: 880px; background-image: url(&quot;img/889CA7BC.jpg&quot;); background-size: 1420px 880px; margin: 0px; padding: 0px; top: 0px; left: 0px; background-position: 0px 0px; background-repeat: no-repeat no-repeat;" bg_image="img/889CA7BC.jpg" prefix="Siemens">
+                         
+   
+            
+            <div comp_type="cus_loginCmp" id="LOGIN_CMP" style="border: 1px double rgb(0, 0, 0); width: 392px; height: 202px; background-color: rgb(204, 204, 204); opacity: 0.75; font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 100%; line-height: 1.5; font-family: &quot;Helvectica Neue&quot;, Helvetica, Arial, sans-serif; position: absolute; left: 515px; top: 340px; transform: rotate(0deg); background-size: 392px 203px; zoom: 1; z-index: 2; background-repeat: no-repeat no-repeat;" degree="0">
+                                 
+    
+                
+                <form id="login" style="width:90%;height:90%;margin:5%;border: 0;text-align:left">
+                                         
+     
+                    
+                    <div style="height: 40%; font-style: normal; font-variant-caps: normal; font-stretch: normal; font-size: 16px; line-height: 1.5; font-family: Arial; color: rgb(0, 0, 0);" class="loginText">
+                                                 
+      
+                        
+                        <div class="logininputDiv" style="width: 100%;height: 45%;clear: both;border: 0px solid gray;">
+                                                         
+       
+                            
+                            <div class="logininputTitle loginText" style="float: left; width: 30%; font-family: Arial; font-size: 16px; font-style: normal; color: rgb(0, 0, 0);">
+        Name
+       </div>
+                                                         
+       
+                            
+                            <div class="logininput" style="float: left;width: 70%;">
+                                                                 
+        <select id="input_username" style="width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size: 100%;font-family: inherit;padding-left: 2px;padding-top: 3px;padding-bottom: 3px;border: 1px solid #879baa;border-radius: 0 !important;background: #fff;"><option value="Web Guest" selected>Web Guest</option><option value="Web User">Web User</option> </select> 
+       
+                            
+                            </div>
+                                                         
+      
+                        
+                        </div>
+                                                 
+      
+                        
+                        <div class="logininputDiv" style="width: 100%;height: 45%;clear: both;border: 0px solid gray;">
+                                                         
+       
+                            
+                            <div class="logininputTitle loginText" style="float: left; width: 30%; font-family: Arial; font-size: 16px; font-style: normal; color: rgb(0, 0, 0);">
+        Password
+       </div>
+                                                         
+       
+                            
+                            <div class="logininput" style="float: left;width: 70%;">
+                                                                 
+        <input id="input_password" type="password" maxlength="10" onfocus="OnPasswordFocus(this);" style="width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size: 100%;font-family: inherit;padding-left: 2px;padding-top: 3px;padding-bottom: 3px;border: 1px solid #879baa;border-radius: 0 !important;background: #fff;"> 
+       
+                            
+                            </div>
+                                                         
+      
+                        
+                        </div>
+                                                 
+     
+                    
+                    </div>
+                                         
+     
+                    
+                    <div style="display: none; font-style: normal; font-variant-caps: normal; font-stretch: normal; font-size: 16px; line-height: 1.5; font-family: Arial; color: rgb(0, 0, 0);" class="loginText">
+      Language
+     </div>
+                                         
+     
+                    
+                    <div style="display:none">
+                                                 
+      <select id="select_language" onchange="OnLanguageChange(this);"><option value="1">English</option><option value="0">Deutsch</option><option value="2">Fran?ais</option><option value="4">Italiano</option><option value="3">Espa?ol</option><option value="5">中文</option><option value="9">日本語</option></select> 
+     
+                    
+                    </div>
+                                         
+     
+                    
+                    <div style="height: 28%; font-style: normal; font-variant-caps: normal; font-stretch: normal; font-size: 16px; line-height: 1.5; font-family: Arial; color: rgb(0, 0, 0);" class="loginText">
+                                                 
+      
+                        
+                        <fieldset style="float:right;border: 0;">
+                                                         
+       
+                            
+                            <div style="display: none;" id="toCustomizedSite">
+                                                                 
+        <input id="check_logoncustomized" name="logonCustomizedWeb" type="checkbox" checked style="border: 1px solid #879baa;border-radius: 0 !important;margin-right: .6em;padding: 2px;"> 
+        <label for="check_logoncustomized" onselectstart="return false;">To customized site </label> 
+       
+                            
+                            </div>
+                                                         
+       
+                            
+                            <div id="keepMeLoggedOn" style="display: none;">
+                                                                 
+        <input id="check_keepsignin" name="staySignedIn" type="checkbox" checked style="border: 1px solid #879baa;border-radius: 0 !important;margin-right: .6em;padding: 2px;"> 
+        <label for="check_keepsignin" onselectstart="return false;">Keep me logged on </label> 
+       
+                            
+                            </div>
+                                                         
+      
+                        
+                        </fieldset>
+                                                 
+     
+                    
+                    </div>
+                                         
+     
+                    
+                    <div style="clear:both;height:16%;margin-bottom: 10px" class="loginbutton">
+                                                 
+      <button id="button_login" onclick="return LoginPageLogin();" failed_by_password="Invalid password" webserver_disabled="Web server is disabled." style="display: block;font-size: 100%;float: right;width: 60%;max-width: 12em;height: 100%;max-height: 3em;cursor: pointer;background-color: #879baa;color: #fff; border-width: 1px;border-style: solid;border-color: #fff #000 #000 #fff;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Log on</button> 
+     
+                    
+                    </div>
+                                         
+    
+                
+                </form>
+                                 
+   
+            
+            </div>
+                         
+  
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 985px; top: 693px; width: 199px; height: 67px; background-size: 199px 68px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 3; background-repeat: no-repeat no-repeat;" id="4b14a38cacd849234c71" degree="0" text_align="center">
+                                    
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 199px; height: 67px;">
+                                        Made with love and care by
+                    
+                    <br>
+                                        
+                    <br>
+                                        Kevin Montfoort
+                
+                </p>
+                            
+            </div>
+                    
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 668px; top: 421px; width: 143px; height: 42px; background-size: 143px 43px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 4; background-repeat: no-repeat no-repeat;" id="4e77b6753a1cca3b7084" degree="0" text_align="center">
+                    
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 143px; height: 42px;">web guest password is<br>viewer</p>
+            </div>
+        </div> 
+        </div>
+        <div id="timeout_dlg" style="display: none">Please check the network connection!</div>
+    
+
+
+</body></html>

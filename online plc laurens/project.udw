@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tProjectObj>
+    <name>online plc laurens</name>
+    <pages>
+        <pageName>login</pageName>
+        <pageTitle>Login Page</pageTitle>
+    </pages>
+    <pages>
+        <pageName>main</pageName>
+        <pageTitle>Home Page</pageTitle>
+    </pages>
+    <pages>
+        <pageName>nav</pageName>
+        <pageTitle>Navigator</pageTitle>
+    </pages>
+    <pages>
+        <pageName>tagtable</pageName>
+        <pageTitle>tagtable</pageTitle>
+    </pages>
+    <pages>
+        <pageName>page_2</pageName>
+        <pageTitle>STORING TABLAT</pageTitle>
+    </pages>
+    <pages>
+        <pageName>page_1</pageName>
+        <pageTitle>grafieken</pageTitle>
+    </pages>
+    <pages>
+        <pageName>page_3</pageName>
+        <pageTitle>debug</pageTitle>
+    </pages>
+    <resolution>
+        <height>900</height>
+        <width>1440</width>
+    </resolution>
+    <version>V1.2.1</version>
+    <type>Siemens</type>
+</tProjectObj>
